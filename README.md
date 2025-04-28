@@ -1,134 +1,93 @@
-# 📁 nantasu-site
+```markdown
+# 🖥️ Nantasu Site
 
-A personal website project with **React (Frontend)** and **Node.js + Express (Backend)**
+A modern frontend web project powered by **React.js**, **TailwindCSS**, and **Vite.js**.  
+Designed to be lightweight, responsive, and scalable for personal or professional portfolio websites.
 
 ---
 
-## 📦 Folder Structure
+## 🚀 Tech Stack
+
+- **React.js** — Frontend JavaScript library
+- **TailwindCSS** — Utility-first CSS framework
+- **Vite** — Blazing-fast frontend build tool
+- **ESLint** — Code quality enforcement
+
+---
+
+## 📂 Folder Structure
 
 ```
 nantasu-site/
-├── frontend/              # ReactJS + TailwindCSS
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── sections/
-│   │   ├── data/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── index.html
-│   ├── tailwind.config.js
-│   ├── postcss.config.js
-│   └── package.json
-│
-├── backend/               # Node.js + Express
-│   ├── controllers/
-│   ├── routes/
-│   ├── models/
-│   ├── config/
-│   ├── server.js
-│   └── package.json
-│
-├── .gitignore
-└── README.md
+├── public/                  # Static assets
+│   └── screenshot-homepage.png  # Project screenshot
+├── src/                     # Source code
+│   ├── assets/              # Images and static media
+│   ├── components/          # Reusable React components
+│   ├── sections/            # Page sections (Home, About, Skills, etc.)
+│   ├── App.jsx              # Main App Component
+│   └── main.jsx             # ReactDOM entry point
+├── index.html               # HTML template
+├── tailwind.config.js       # TailwindCSS configuration
+├── postcss.config.js        # PostCSS configuration
+├── package.json             # Project metadata and dependencies
+└── README.md                # Project description (this file)
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Getting Started
 
-### 1. Clone the repository & enter the folder
+### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Worawit-Nantasu/nantasu-site.git
 cd nantasu-site
 ```
 
----
-
-## 🖥 Frontend Setup (React + Vite + TailwindCSS)
-
-### 1. Create frontend project
+### 2. Install Dependencies
 ```bash
-mkdir frontend
-cd frontend
-npm create vite@latest . -- --template react
 npm install
 ```
 
-### 2. Install TailwindCSS
+### 3. Setup TailwindCSS (if necessary)
+> If TailwindCSS doesn't work correctly (e.g., background colors missing), run:
 ```bash
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-### 3. Configure Tailwind in `tailwind.config.js`
-```js
-// tailwind.config.js
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-
-### 4. Add Tailwind to `src/index.css`
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-### 5. Run frontend
+### 4. Start the Development Server
 ```bash
 npm run dev
 ```
-Visit: `http://localhost:5173`
+> By default: Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
 ---
 
-## 🔧 Backend Setup (Node.js + Express)
+## 📢 Features
 
-### 1. Create backend folder & init Node
-```bash
-cd ..
-mkdir backend
-cd backend
-npm init -y
-npm install express
-```
-
-### 2. Create a simple server in `server.js`
-```js
-// server.js
-const express = require('express');
-const app = express();
-const PORT = 5000;
-
-app.get('/', (req, res) => {
-  res.send('✅ Backend is running!');
-});
-
-app.listen(PORT, () => {
-  console.log(`🚀 Server is running at http://localhost:${PORT}`);
-});
-```
-
-### 3. Run backend
-```bash
-node server.js
-```
-Visit: `http://localhost:5000`
+- ⚡ Ultra-fast development with Vite
+- 🎨 Responsive and mobile-first UI with TailwindCSS
+- 🧩 Modular React component structure
+- 🔍 Built-in ESLint for code consistency
+- 🔥 Easy to customize, extend, and deploy
 
 ---
 
-## ✅ Next Steps
-- Connect Frontend ↔ Backend
-- Add route/controllers in `backend/`
-- Add project sections, contact form, and animations in `frontend/`
+## 📜 License
+
+This project is licensed under the **MIT License**.  
+Feel free to fork, modify, and use it for any purpose!
 
 ---
 
-Made with 💻 by Worawit Nantasu
+# 🙌 Special Thanks
+
+Created by **Worawit Nantasu** with ❤️ and passion for modern web development.
+
+---
+
+# 📸 Project Screenshot
+
+### Home Page
+![Home Page Screenshot](frontend/public/screenshot-homepage.png)
