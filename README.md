@@ -1,4 +1,3 @@
-```markdown
 # 🖥️ Nantasu Site
 
 A modern frontend web project powered by **React.js**, **TailwindCSS**, and **Vite.js**.  
@@ -61,23 +60,6 @@ npx tailwindcss init -p
 npm run dev
 ```
 > By default: Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
-
----
-
-## 📢 Features
-
-- ⚡ Ultra-fast development with Vite
-- 🎨 Responsive and mobile-first UI with TailwindCSS
-- 🧩 Modular React component structure
-- 🔍 Built-in ESLint for code consistency
-- 🔥 Easy to customize, extend, and deploy
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.  
-Feel free to fork, modify, and use it for any purpose!
 
 ---
 
